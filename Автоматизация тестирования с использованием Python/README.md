@@ -1,25 +1,7 @@
 Задача: Написать тесты на главную страницу сайта effective-mobile.ru, проверяющие переход по всем блокам по клику (О нас, Контакты и пр.). Проверять нужно соответствующие локаторы и url’ы.
 Для тестирования используется Selenium и Pytest, для генерации подробных отчетов о прохождении тестов используется Allure 
 
-Требования
-
-- Python 3.10
-- Google Chrome и ChromeDriver (должен совпадать с версией Chrome)
-
-Установка и запуск проекта
-
-1. Клонирование репозитория
-
-git clone https://github.com/nikewalce/Testing/tree/main/%D0%90%D0%B2%D1%82%D0%BE%D0%BC%D0%B0%D1%82%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F%20%D1%82%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20%D1%81%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%D0%BC%20Python
-cd project_root
-
-2. Создание виртуального окружения
-
-python -m venv venv
-source venv/bin/activate  # Для macOS/Linux
-venv\Scripts\activate    # Для Windows
-
-3. Установка зависимостей
+1. Установка зависимостей
 
 pip install -r requirements.txt
 
@@ -27,9 +9,10 @@ pip install -r requirements.txt
 
 Windows
 
-Скачайте Allure с GitHub Releases и распакуйте.
+Скачайте Allure.zip с [GitHub Releases](https://github.com/allure-framework/allure2/releases) и распакуйте.
 
 Добавьте путь к папке bin в переменную окружения PATH (например, C:\allure\bin).
+Скачайте Java и добавьте путь к системной переменной JAVA_HOME (например, C:\Program Files (x86)\Java\jre1.8.0_441)
 
 macOS/Linux
 
