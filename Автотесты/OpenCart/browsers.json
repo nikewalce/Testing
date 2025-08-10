@@ -1,0 +1,22 @@
+{
+  "chrome": {
+    "default": "135.0.7049.96",
+    "versions": {
+      "135.0.7049.96": {
+        "path": "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+        "driver": "D:/workPython/ITFB/ITFB_hw/hw_7/chrome-win64/chrome.exe",
+        "port": "4445"
+      }
+    }
+  },
+  "firefox": {
+    "default": "137.0.2",
+    "versions": {
+      "137.0.2": {
+        "path": "C:/Program Files/Mozilla Firefox/firefox.exe",
+        "driver": "D:/workPython/ITFB/ITFB_hw/hw_7/geckodriver.exe",
+        "port": "4446"
+      }
+    }
+  }
+}

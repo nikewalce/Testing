@@ -1,0 +1,22 @@
+from selenium.webdriver.common.by import By
+
+class CartProductLocators:
+    SELECT_AVAILABLE_OPTIONS_DROPDOWN_LIST = (By.XPATH, "//select[@id='input-option226' and @class='form-control']")
+    OPTION_RED = (By.XPATH, "//option[@value='15']")
+    INPUT_QTY = (By.XPATH, "//input[@id='input-quantity' and @class='form-control']")
+    ADD_TO_CART_BUTTON = (By.XPATH, "//button[@id='button-cart']")
+    SHOPPING_CART_BUTTON = (By.XPATH, "//a[@title='Shopping Cart']")
+    RADIO_MEDIUM_CHECKBOX = (By.XPATH, "//input[@name='option[218]']")
+    CHECKBOX3 = (By.XPATH, "//input[@name='option[223][]' and @value='10']")
+    CHECKBOX4 = (By.XPATH, "//input[@name='option[223][]' and @value='11']")
+    TEXT_INPUT = (By.XPATH, "//input[@id='input-option208']")
+    SELECT_AVAILABLE_OPTIONS_DROPDOWN = (By.XPATH, "//select[@id='input-option217']")
+    YELLOW_AVAILABLE_OPTIONS = (By.XPATH, "//select[@id='input-option217']//option[contains(normalize-space(.), 'Yellow')]")
+    TEXTAREA_AVAILABLE_OPTIONS = (By.XPATH, "//textarea[@id='input-option209' and @class='form-control']")
+    BUTTON_UPLOAD_FILE = (By.XPATH, "//button[@id='button-upload222']")
+    INPUT_TYPE_FILE = (By.XPATH, "//form[@id='form-upload']//input[@type='file']")
+    DATE_INPUT = (By.XPATH, "//input[@id='input-option219']")
+    TIME_INPUT = (By.XPATH, "//input[@id='input-option221']")
+    DATEANDTIME_INPUT = (By.XPATH, "//input[@id='input-option220']")
+    CART_DIV = (By.XPATH, "//div[@id='cart']")
+    CART_CHECKOUT = (By.XPATH, "//a[.//strong[contains(text(), 'Checkout')]]")
