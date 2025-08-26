@@ -1,0 +1,60 @@
+[tool.poetry]
+package-mode = false
+
+[project]
+name = "test"
+version = "0.1.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+selenium = "^4.19.0"
+pytest = "^7.4.4"
+pydantic = "^2.7.0"
+testit-cli = "2.4.8"
+allure-pytest = "^2.13.5"
+requests = "^2.31.0"
+python-decouple = "^3.8"
+pytest-xdist = "^3.5.0"
+flake8 = "^7.1.0"
+pre-commit = "^3.8.0"
+faker = "^26.0.0"
+sqlalchemy = "^2.0.32"
+psycopg2 = "^2.9.9"
+setuptools = "^74.0.0"
+python-dotenv = "^1.0.1"
+isort = "^5.13.2"
+pytest-mock = "^3.14.0"
+pymupdf = "^1.24.12"
+psutil = "^6.1.0"
+lxml = "^5.3.0"
+pillow = "^11.0.0"
+pytest-bdd = "^8.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+markers = """
+    api: API
+    base_api: Base API
+    unit: Юнит-тест
+    integration: Интеграционный тест
+    ui: UI-тест
+"""
+addopts = """
+          -v
+          --alluredir allure-results
+          --disable-warnings
+"""
+
+[tool.flake8]
+max-line-length = 79
+per-file-ignores = ["__init__.py:F401"]
+exclude = [".venv", "venv/", ".cache"]
+
+[tool.ruff]
+line-length = 79
+ignore = ["F811", "F403"]
